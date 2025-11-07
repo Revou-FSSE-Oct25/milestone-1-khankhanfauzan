@@ -388,6 +388,16 @@ footer {
     width: 50%;
 }
 
+.form-field fieldset {
+    border: none;
+    padding: 0;
+}
+
+.form-field legend {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
 .contact-info {
     text-align: left;
     width: 50%;
