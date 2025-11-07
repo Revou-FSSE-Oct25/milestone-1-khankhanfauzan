@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fauzan Khan — budding web developer portfolio and contact." />
     <link rel="stylesheet" href="./css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +17,7 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#intro">HOME</a></li>
+                    <li><a href="#intro" aria-current="page">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li class="float-right btn btn-primary"><a href="#contact">CONTACT</a></li>
@@ -30,8 +31,8 @@
         <section id="intro">
             <div class="hero container flex items-center justify-center container justify-between">
                 <div class="left text-right">
-                    <h5>Fauzan Khan</h5>
-                    <h1>I'm a Software <br> <span>Engineer</span></h1>
+                    <h1>Fauzan Khan</h1>
+                    <h2>I'm a Software <br><span>Engineer</span></h2>
                     <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugiat delectus voluptatibus
                         reprehenderit. Illo voluptas dolorum animi sunt quibusdam aspernatur?</p> -->
                     <br>
@@ -49,28 +50,20 @@
                     <img src="./images/profiles/fauzan_photo.JPG" alt="profile 2" height="400px">
                 </div>
                 <div class="left text-left">
-                    <h5>About <span>Me</span></h5>
+                    <h2>About <span>Me</span></h2>
                     <h3>Hello I'm Fauzan Khan.</h3>
                     <p>Software Engineer with mobile dev experience, focused on transforming complex requirements into
                         functional, high-performance web and mobile applications. A dedicated problem-solver committed
                         to continuous learning and innovation.</p>
                     <br>
-                    <table>
-                        <tr>
-                            <td><strong>Birthday</strong></td>
-                            <td>:</td>
-                            <td>Nov 11, 1998</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Email</strong></td>
-                            <td>:</td>
-                            <td>khankhanfauzan@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td><strong>From</strong></td>
-                            <td>:</td>
-                            <td> Jakarta, Indonesia</td>
-                    </table>
+                    <dl class="about-list">
+                        <dt>Birthday</dt>
+                        <dd>Nov 11, 1998</dd>
+                        <dt>Email</dt>
+                        <dd>khankhanfauzan@gmail.com</dd>
+                        <dt>From</dt>
+                        <dd>Jakarta, Indonesia</dd>
+                    </dl>
                     <a class="btn btn-secondary right" href="./assets/cv_fauzan.pdf" download="cv_fauzan.pdf">DOWNLOAD
                         CV</a>
                 </div>
@@ -110,68 +103,73 @@
         <section id="projects">
             <div class="hero container">
                 <div class="text-left">
-                    <h5>My <span>Projects</span></h5>
+                    <h2>My <span>Projects</span></h2>
                     <h3>Here are some of my projects.</h3>
                     <br>
                 </div>
                 <div class="grid-container">
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/mds_quail.png" alt="MDS Quail App">
+                            <img src="./images/projects/mds_quail.png"
+                                alt="Screenshot of MDS Quail mobile app dashboard">
                             <figcaption>MDS Quail</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/mds_coop.png" alt="MDS Quail App">
+                            <img src="./images/projects/mds_coop.png"
+                                alt="Screenshot of MDS Cooperative mobile app dashboard">
                             <figcaption>MDS Cooperative</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/linxspace.png" alt="MDS Quail App">
+                            <img src="./images/projects/linxspace.png" alt="Screenshot of Linxspace web app interface">
                             <figcaption>Linxspace</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/linxcoop.png" alt="MDS Quail App">
+                            <img src="./images/projects/linxcoop.png" alt="Screenshot of LinxCoop web app interface">
                             <figcaption>LinxCoop</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/fuelinx.png" alt="MDS Quail App">
+                            <img src="./images/projects/fuelinx.png" alt="Screenshot of Fuelinx mobile app interface">
                             <figcaption>Fuelinx</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/patlog_operator.png" alt="MDS Quail App">
+                            <img src="./images/projects/patlog_operator.png"
+                                alt="Screenshot of Patlog Operator mobile app">
                             <figcaption>Patlog Operator</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/patlog_pengawas.png" alt="MDS Quail App">
+                            <img src="./images/projects/patlog_pengawas.png"
+                                alt="Screenshot of Patlog Pengawas mobile app">
                             <figcaption>Patlog Pengawas</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/patlog_driver.png" alt="MDS Quail App">
+                            <img src="./images/projects/patlog_driver.png" alt="Screenshot of Patlog Driver mobile app">
                             <figcaption>Patlog Driver</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/mypertashop.png" alt="MDS Quail App">
+                            <img src="./images/projects/mypertashop.png" alt="Screenshot of MyPertashop mobile app">
                             <figcaption>MyPertashop</figcaption>
                         </figure>
                     </div>
                     <div class="grid-item">
                         <figure>
-                            <img src="./images/projects/manager_mypertashop.png" alt="MDS Quail App">
+                            <img src="./images/projects/manager_mypertashop.png"
+                                alt="Screenshot of Manager MyPertashop mobile app">
                             <figcaption>Manager MyPertashop</figcaption>
                         </figure>
                     </div>
@@ -181,20 +179,24 @@
         <!-- Contacts -->
         <section id="contact">
             <div class="hero container">
-                <h5>Let's Get in <span>Touch</span></h5>
+                <h2>Let's Get in <span>Touch</span></h2>
 
                 <br>
                 <div class="flex justify-center container justify-between">
 
                     <div class="form-field text-left">
                         <form action="#" method="get" class="contact-form">
+                            <!-- <fieldset> -->
+                            <!-- <legend>Send a Message</legend> -->
                             <div class="form-control">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name" required minlength="2">
+                                <input type="text" id="name" name="name" placeholder="Your name" required minlength="2"
+                                    autocomplete="name">
                             </div>
                             <div class="form-control">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required
+                                    autocomplete="email">
                             </div>
                             <div class="form-control">
                                 <label for="message">Message</label>
@@ -202,6 +204,7 @@
                                     minlength="10"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
+                            <!-- </fieldset> -->
                         </form>
                     </div>
                     <div class="contact-info text-right">
@@ -236,16 +239,19 @@
                             <div class="flex">
                                 <ul class="socialmedia">
                                     <li>
-                                        <a class="fa fa-linkedin" aria-hidden="true"
-                                            href="https://www.linkedin.com/in/fauzanakbarkhan/" target="_blank"></a>
+                                        <a class="fa fa-linkedin" aria-label="LinkedIn"
+                                            href="https://www.linkedin.com/in/fauzanakbarkhan/" target="_blank"
+                                            rel="noopener noreferrer"></a>
                                     </li>
                                     <li>
-                                        <a class="fa fa-github" aria-hidden="true"
-                                            href="https://github.com/khankhanfauzan/" target="_blank"></a>
+                                        <a class="fa fa-github" aria-label="GitHub"
+                                            href="https://github.com/khankhanfauzan/" target="_blank"
+                                            rel="noopener noreferrer"></a>
                                     </li>
                                     <li>
-                                        <a class="fa fa-instagram" aria-hidden="true"
-                                            href="https://www.instagram.com/fauzanx34/" target="_blank"></a>
+                                        <a class="fa fa-instagram" aria-label="Instagram"
+                                            href="https://www.instagram.com/fauzanx34/" target="_blank"
+                                            rel="noopener noreferrer"></a>
                                     </li>
 
                                 </ul>

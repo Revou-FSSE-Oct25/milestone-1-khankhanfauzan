@@ -132,18 +132,18 @@ nav ul li a {
     border-radius: 8px;
 }
 
-#intro h5 {
+#intro h1 {
     color: teal;
     font-size: 24px;
     margin-bottom: -15px;
 }
 
-#intro h1 {
+#intro h2 {
     font-size: 32px;
     margin: 16px 0;
 }
 
-#intro h1 span {
+#intro h2 span {
     color: teal;
 }
 
@@ -151,12 +151,12 @@ nav ul li a {
     padding: 50px 0;
 }
 
-#about h5 {
+#about h2 {
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-#about h5 span {
+#about h2 span {
     color: teal;
 }
 
@@ -230,13 +230,13 @@ footer {
     text-align: center;
 }
 
-#projects h5 {
+#projects h2 {
     color: white;
     font-size: 24px;
     margin-bottom: 8px;
 }
 
-#projects h5 span {
+#projects h2 span {
     color: teal;
 }
 
@@ -335,8 +335,24 @@ footer {
     font-size: 24px;
 }
 
-#contact h5 span {
+#contact h2 span {
     color: teal;
+}
+
+/* About details list */
+.about-list {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 12px;
+}
+
+.about-list dt {
+    font-weight: 600;
+}
+
+.about-list dd {
+    margin: 0;
+    color: #555;
 }
 
 .form-field {
