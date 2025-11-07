@@ -18,20 +18,22 @@ nav {
     padding: 10px 20px;
 }
 
-ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
-nav ul li {
-    float: left;
+nav ul li.float-right {
+    margin-left: auto;
 }
 
 nav ul li a {
     display: block;
-    color: whitesmoke;
+    color: white;
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
@@ -132,18 +134,18 @@ nav ul li a {
     border-radius: 8px;
 }
 
-#intro h5 {
+#intro h1 {
     color: teal;
     font-size: 24px;
     margin-bottom: -15px;
 }
 
-#intro h1 {
+#intro h2 {
     font-size: 32px;
     margin: 16px 0;
 }
 
-#intro h1 span {
+#intro h2 span {
     color: teal;
 }
 
@@ -151,12 +153,12 @@ nav ul li a {
     padding: 50px 0;
 }
 
-#about h5 {
+#about h2 {
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-#about h5 span {
+#about h2 span {
     color: teal;
 }
 
@@ -222,7 +224,7 @@ footer {
 
 #projects {
     background-color: #000;
-    color: #fff;
+    color: white;
     padding: 50px 0;
 }
 
@@ -230,13 +232,13 @@ footer {
     text-align: center;
 }
 
-#projects h5 {
+#projects h2 {
     color: white;
     font-size: 24px;
     margin-bottom: 8px;
 }
 
-#projects h5 span {
+#projects h2 span {
     color: teal;
 }
 
@@ -252,7 +254,7 @@ footer {
     padding: 12px;
     border-radius: 8px;
     text-align: left;
-    color: #fff;
+    color: white;
     border: 1px solid rgba(255, 255, 255, 0.04);
     transition: box-shadow 180ms ease, transform 180ms ease;
 }
@@ -280,8 +282,35 @@ footer {
     font-size: 16px;
 }
 
+.project-meta {
+    margin-top: 10px;
+}
+
+.project-meta p {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tech-list li {
+    font-size: 12px;
+    color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 999px;
+}
+
 #skills {
-    color: #fff;
+    color: white;
     padding: 50px 0;
 }
 
@@ -299,7 +328,7 @@ footer {
 #skills table thead th {
     text-align: center;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
     padding: 8px 12px;
 }
 
@@ -316,7 +345,7 @@ footer {
 
 #contact {
     background-color: #000;
-    color: #fff;
+    color: white;
     padding: 50px 0;
 }
 
@@ -335,8 +364,24 @@ footer {
     font-size: 24px;
 }
 
-#contact h5 span {
+#contact h2 span {
     color: teal;
+}
+
+/* About details list */
+.about-list {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 12px;
+}
+
+.about-list dt {
+    font-weight: 600;
+}
+
+.about-list dd {
+    margin: 0;
+    color: #555;
 }
 
 .form-field {
@@ -350,6 +395,12 @@ footer {
 
 .contact-info ul li {
     margin-bottom: 12px;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-info-item h6 {
@@ -399,7 +450,7 @@ footer {
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: #0f0f0f;
-    color: #fff;
+    color: white;
 }
 
 .contact-form input::placeholder,
