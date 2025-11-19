@@ -1,247 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fauzan Khan — budding web developer portfolio and contact." />
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fauzan Khan - Personal Website</title>
+    <!-- script for mobile menu button -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 </head>
 
-<body>
+<body class="bg-black">
     <header>
-        <!-- Navigations -->
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#intro" aria-current="page">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li class="float-right btn btn-primary"><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav
+            class="fixed inset-x-0 top-0 z-50 bg-black shadow-md after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button" command="--toggle" commandfor="mobile-menu"
+                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-teal-500">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center sm:items-stretch sm:justify-start">
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <a href="#intro" aria-current="page"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">HOME</a>
+                                <a href="#about"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">ABOUT</a>
+                                <a href="#projects"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">PROJECTS</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact">
+                        <button
+                            class="text-white bg-teal-500 transition hover:bg-teal-700 px-4 py-2 rounded">CONTACT</button>
+                    </a>
+                </div>
+            </div>
+
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="#intro" aria-current="page"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">HOME</a>
+                    <a href="#about"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">ABOUT</a>
+                    <a href="#projects"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">PROJECTS</a>
+                </div>
+            </el-disclosure>
+        </nav>
     </header>
 
-    <main>
+    <main class="pt-16">
         <!-- Intro -->
         <section id="intro">
-            <div class="hero container flex items-center justify-center container justify-between">
-                <div class="left text-right">
-                    <h1>Fauzan Khan</h1>
-                    <h2>I'm a Software <br><span>Engineer</span></h2>
+            <div class="mx-auto bg-black text-white py-32 px-16 sm:flex justify-center">
+                <div class="pb-12 sm:pr-12 text-right">
+                    <h1 class="text-teal-500 text-2xl">Fauzan Khan</h1>
+                    <h2 class=" text-3xl font-semibold">I'm a Software <br><span
+                            class="text-teal-500 font-semibold">Engineer</span>
+                    </h2>
                     <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugiat delectus voluptatibus
                         reprehenderit. Illo voluptas dolorum animi sunt quibusdam aspernatur?</p> -->
                     <br>
-                    <a class="btn btn-secondary right" href="#contact">Hire Me</a>
+                    <a class="" href="#contact"><button
+                            class="py-2 px-8 border-teal-500 text-teal-500 border-1 rounded  transition hover:border-teal-700 hover:text-teal-700">Hire
+                            Me</button></a>
                 </div>
-                <div class="rounded">
-                    <img src="./images/profiles/fauzan_photo_2.JPG" alt="profile" height="400px">
+                <div class="rounded-lg overflow-hidden">
+                    <img class="w-100" src="./images/profiles/fauzan_photo_2.JPG" alt="profile">
                 </div>
             </div>
         </section>
         <!-- About -->
         <section id="about">
-            <div class="hero container flex items-center justify-center container justify-between">
-                <div class="rounded">
-                    <img src="./images/profiles/fauzan_photo.JPG" alt="profile 2" height="400px">
+            <div class="mx-auto bg-white text-black py-32 px-16 sm:flex justify-start">
+                <div class="rounded-lg overflow-hidden">
+                    <img class="w-300" src="./images/profiles/fauzan_photo.JPG" alt="profile 2 ">
                 </div>
-                <div class="left text-left">
-                    <h2>About <span>Me</span></h2>
-                    <h3>Hello I'm Fauzan Khan.</h3>
-                    <p>Software Engineer with mobile dev experience, focused on transforming complex requirements into
+                <div class="pt-12 sm:pl-12">
+                    <h2 class=" text-2xl font-semibold">About <span class="text-teal-500">Me</span></h2>
+                    <h3 class="py-4">Hello I'm Fauzan Khan.</h3>
+                    <p class="text-neutral-500">Software Engineer with mobile dev experience, focused on transforming
+                        complex requirements into
                         functional, high-performance web and mobile applications. A dedicated problem-solver committed
                         to continuous learning and innovation.</p>
                     <br>
-                    <dl class="about-list">
-                        <dt>Birthday</dt>
-                        <dd>Nov 7, 1998</dd>
-                        <dt>Email</dt>
-                        <dd>khankhanfauzan@gmail.com</dd>
-                        <dt>From</dt>
-                        <dd>Jakarta, Indonesia</dd>
+                    <dl class="grid grid-cols-[auto_1fr]  gap-4">
+                        <dt class="font-semibold">Birthday</dt>
+                        <dd class="text-neutral-500">Nov 7, 1998</dd>
+                        <dt class="font-semibold">Email</dt>
+                        <dd class="text-neutral-500">khankhanfauzan@gmail.com</dd>
+                        <dt class="font-semibold">From</dt>
+                        <dd class="text-neutral-500">Jakarta, Indonesia</dd>
                     </dl>
-                    <a class="btn btn-secondary right" href="./assets/cv_fauzan.pdf" download="cv_fauzan.pdf">DOWNLOAD
-                        CV</a>
+                    <a href="./assets/cv_fauzan.pdf" download="cv_fauzan.pdf"><button
+                            class="mt-8 py-2 px-8 border-teal-500 text-teal-500 border-1 rounded transition hover:border-teal-700 hover:text-teal-700">DOWNLOAD
+                            CV</button></a>
                 </div>
             </div>
         </section>
         <section id="skills">
-            <div class="hero container">
+            <div class="mx-auto bg-white text-black py-32 px-16 sm:flex justify-center">
                 <div>
-                    <!-- <h5>My <span>Skills</span></h5>
-                    <h3>Here are some of my skills.</h3> -->
-                    <!-- <br> -->
-                    <table>
+                    <table class="table-auto">
                         <thead>
-                            <th>Technical <span>Skills</span></th>
+                            <th class="text-2xl font-semibold p-2">Technical <span class="text-teal-500">Skills</span>
+                            </th>
                         </thead>
-                        <tr>
-                            <td>Flutter, Dart</td>
-                        </tr>
-                        <tr>
-                            <td>HTML, CSS, JavaScript</td>
-                        </tr>
-                        <tr>
-                            <td>React, Node.js, Express</td>
-                        </tr>
-                        <tr>
-                            <td>Database Management (MySQL, MongoDB)</td>
-                        </tr>
-                        <tr>
-                            <td>Version Control (Git, GitHub, GitLab)</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td class="p-2 text-center text-neutral-500">Flutter, Dart</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 text-center text-neutral-500">HTML, CSS, JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 text-center text-neutral-500">React, Node.js, Express</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 text-center text-neutral-500">Database Management (MySQL, MongoDB)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 text-center text-neutral-500">Version Control (Git, GitHub, GitLab)</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
 
             </div>
         </section>
-        <!-- Services -->
+        <!-- Projects -->
         <section id="projects">
-            <div class="hero container">
-                <div class="text-left">
-                    <h2>My <span>Projects</span></h2>
-                    <h3>Here are some of my projects.</h3>
-                    <br>
+            <div class="mx-auto bg-black text-white py-32 px-16 justify-center">
+                <div class="text-center">
+                    <h2 class="text-2xl font-semibold p-2">My <span class="text-teal-500">Projects</span></h2>
+                    <h3 class="py-2">Here are some of my projects.</h3>
                 </div>
-                <div class="grid-container">
-                    <div class="grid-item">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/mds_quail.png"
                                 alt="Screenshot of MDS Quail mobile app dashboard">
-                            <figcaption>MDS Quail</figcaption>
+                            <figcaption class="font-semibold">MDS Quail</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Mobile app dashboard for quail farm management and tracking.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Mobile app dashboard for quail farm management and
+                                tracking.</p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/mds_coop.png"
                                 alt="Screenshot of MDS Cooperative mobile app dashboard">
-                            <figcaption>MDS Cooperative</figcaption>
+                            <figcaption class="font-semibold">MDS Cooperative</figcaption>
                         </figure>
                         <div class="project-meta">
-
-                            <p>MDS member app for savings, loans, PPOB, and shopping.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">MDS member app for savings, loans, PPOB, and
+                                shopping.</p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/linxspace.png"
                                 alt="Screenshot of Linxspace mobile app interface">
-                            <figcaption>Linxspace</figcaption>
+                            <figcaption class="font-semibold">Linxspace</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Device registration, QA, and firmware updates via Bluetooth.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Device registration, QA, and firmware updates via
+                                Bluetooth.</p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/linxcoop.png" alt="Screenshot of LinxCoop mobile app interface">
-                            <figcaption>LinxCoop</figcaption>
+                            <figcaption class="font-semibold">LinxCoop</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Digital service platform for various cooperatives.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Digital service platform for various cooperatives.
+                            </p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/fuelinx.png" alt="Screenshot of Fuelinx mobile app interface">
-                            <figcaption>Fuelinx</figcaption>
+                            <figcaption class="font-semibold">Fuelinx</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Dispenser control, digital transactions, and receipt printing for gas stations.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Dispenser control, digital transactions, and
+                                receipt printing for gas station
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/patlog_operator.png"
                                 alt="Screenshot of Patlog Operator mobile app">
-                            <figcaption>Patlog Operator</figcaption>
+                            <figcaption class="font-semibold">Patlog Operator</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Transaction, stock, and distribution monitoring for operators.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Transaction, stock, and distribution monitoring for
+                                operators.</p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/patlog_pengawas.png"
                                 alt="Screenshot of Patlog Pengawas mobile app">
-                            <figcaption>Patlog Pengawas</figcaption>
+                            <figcaption class="font-semibold">Patlog Pengawas</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Monitoring with transaction verification for supervisors.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Monitoring with transaction verification for
+                                supervisors.
+                            </p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/patlog_driver.png" alt="Screenshot of Patlog Driver mobile app">
-                            <figcaption>Patlog Driver</figcaption>
+                            <figcaption class="font-semibold">Patlog Driver</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Monitoring and distribution verification for drivers.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Monitoring and distribution verification for
+                                drivers.</p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/mypertashop.png" alt="Screenshot of MyPertashop mobile app">
-                            <figcaption>MyPertashop</figcaption>
+                            <figcaption class="font-semibold">MyPertashop</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Monitoring and fuel ordering for Pertashop owners.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Monitoring and fuel ordering for Pertashop owners.
+                            </p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
                         <figure>
                             <img src="./images/projects/manager_mypertashop.png"
                                 alt="Screenshot of Manager MyPertashop mobile app">
-                            <figcaption>Manager MyPertashop</figcaption>
+                            <figcaption class="font-semibold">Manager MyPertashop</figcaption>
                         </figure>
                         <div class="project-meta">
-                            <p>Pertashop device registration and updates.</p>
-                            <ul class="tech-list">
-                                <li>Flutter</li>
-                                <li>Dart</li>
+                            <p class="py-4 text-neutral-400 text-sm">Pertashop device registration and updates.</p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
                             </ul>
                         </div>
                     </div>
@@ -250,80 +309,89 @@
         </section>
         <!-- Contacts -->
         <section id="contact">
-            <div class="hero container">
-                <h2>Let's Get in <span>Touch</span></h2>
-
-                <br>
-                <div class="flex justify-center container justify-between">
-
-                    <div class="form-field text-left">
+            <div class="mx-auto bg-black text-white py-32 px-16 justify-center">
+                <h2 class="text-2xl font-semibold p-2 text-center mb-8">Let's Get in <span
+                        class="text-teal-500">Touch</span>
+                </h2>
+                <div class="sm:flex gap-8">
+                    <div class="mb-16 w-full">
                         <form action="#" method="get" class="contact-form">
                             <fieldset>
-                                <legend>Send a Message</legend>
+                                <legend class="py-2">Send a Message</legend>
                                 <div class="form-control">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your name" required
-                                        minlength="2" autocomplete="name">
+                                    <label class="text-sm" for="name">Name</label>
+                                    <input
+                                        class="py-2 px-4 border-1 bg-neutral-900 border-neutral-700 rounded-md w-full mt-2 mb-4 text-white placeholder:text-gray-500 transition focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-teal-500"
+                                        type="text" id="name" name="name" placeholder="Your name" required minlength="2"
+                                        autocomplete="name">
                                 </div>
                                 <div class="form-control">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="your@email.com" required
+                                    <label class="text-sm" for="email">Email</label>
+                                    <input
+                                        class="py-2 px-4 border-1 bg-neutral-900 border-neutral-700 rounded-md w-full mt-2 mb-4 text-white placeholder:text-gray-500 transition focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-teal-500"
+                                        type="email" id="email" name="email" placeholder="your@email.com" required
                                         autocomplete="email">
                                 </div>
                                 <div class="form-control">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" placeholder="Write your message" rows="5"
-                                        required minlength="10"></textarea>
+                                    <label class="text-sm" for="message">Message</label>
+                                    <textarea
+                                        class="py-2 px-4 border-1 bg-neutral-900 border-neutral-700 rounded-md w-full mt-2 mb-4 text-white placeholder:text-gray-500 transition focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-teal-500"
+                                        id="message" name="message" placeholder="Write your message" rows="5" required
+                                        minlength="10"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button
+                                    class="text-white bg-teal-500 transition hover:bg-teal-700 px-4 py-2 rounded">Submit</button>
                             </fieldset>
                         </form>
                     </div>
-                    <div class="contact-info text-right">
-                        <h3>Contact Info</h3>
-                        <p>If you have any questions or would like to work together, feel free to reach out!</p>
-                        <br>
-                        <ul class="contact-list">
-                            <li class="flex items-center">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="w-full">
+                        <h3 class="font-semibold">Contact Info</h3>
+                        <p class="py-2">If you have any questions or would like to work together, feel free to reach
+                            out!</p>
+                        <ul class="contact-list mt-4">
+                            <li class="flex gap-4 mb-2">
+                                <i class="border-1 border-teal-500 text-teal-500 p-2 rounded-full w-8 h-8 text-center fa fa-envelope"
+                                    aria-hidden="true"></i>
                                 <div class="contact-info-item">
                                     <h6>Email</h6>
                                     <p>khankhanfauzan@gmail.com</p>
                                 </div>
                             </li>
-                            <li class="flex items-center">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            <li class="flex gap-4 mb-2">
+                                <i class="border-1 border-teal-500 text-teal-500 p-2 rounded-full w-8 h-8 text-center fa fa-phone"
+                                    aria-hidden="true"></i>
                                 <div class="contact-info-item">
                                     <h6>Phone</h6>
                                     <p>+62 878 8968 8787</p>
                                 </div>
                             </li>
-                            <li class="flex items-center">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <li class="flex gap-4 mb-2">
+                                <i class="border-1 border-teal-500 text-teal-500 p-2 rounded-full w-8 h-8 text-center fa fa-map-marker"
+                                    aria-hidden="true"></i>
                                 <div class="contact-info-item">
                                     <h6>Address</h6>
                                     <p>Jakarta, Indonesia</p>
                                 </div>
                             </li>
                         </ul>
-                        <div class="social-media">
+                        <div class="mt-4">
                             <p>Connect with me on social media</p>
-                            <div class="flex">
-                                <ul class="socialmedia">
+                            <div class="mt-2">
+                                <ul class="flex gap-4">
                                     <li>
-                                        <a class="fa fa-linkedin" aria-label="LinkedIn"
-                                            href="https://www.linkedin.com/in/fauzanakbarkhan/" target="_blank"
-                                            rel="noopener noreferrer"></a>
+                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center fa fa-linkedin"
+                                            aria-label="LinkedIn" href="https://www.linkedin.com/in/fauzanakbarkhan/"
+                                            target="_blank" rel="noopener noreferrer"></a>
                                     </li>
                                     <li>
-                                        <a class="fa fa-github" aria-label="GitHub"
-                                            href="https://github.com/khankhanfauzan/" target="_blank"
-                                            rel="noopener noreferrer"></a>
+                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center fa fa-github"
+                                            aria-label="GitHub" href="https://github.com/khankhanfauzan/"
+                                            target="_blank" rel="noopener noreferrer"></a>
                                     </li>
                                     <li>
-                                        <a class="fa fa-instagram" aria-label="Instagram"
-                                            href="https://www.instagram.com/fauzanx34/" target="_blank"
-                                            rel="noopener noreferrer"></a>
+                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center fa fa-instagram"
+                                            aria-label="Instagram" href="https://www.instagram.com/fauzanx34/"
+                                            target="_blank" rel="noopener noreferrer"></a>
                                     </li>
 
                                 </ul>
@@ -333,12 +401,10 @@
 
                 </div>
             </div>
-
         </section>
     </main>
-
     <footer>
-        <div class="container text-center">
+        <div class="text-center p-4 bg-black text-neutral-500">
             <p>&copy; 2025 Fauzan Khan. All rights reserved.</p>
         </div>
     </footer>
