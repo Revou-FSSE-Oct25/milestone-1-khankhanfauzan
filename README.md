@@ -16,17 +16,29 @@ This website shows my learning progress and small projects as a RevoU student. I
 -   Contact info with email, phone, address and social links
 -   Contact form with native validation (required fields and email type)
 -   Download CV button
+-   Responsive design (mobile-first with Tailwind)
+-   Fixed top navbar (remains visible when scrolling)
+-   Hover animations on buttons, links, and projects cards
 
 ## Technologies
 
 -   HTML5
--   CSS3
+-   ~~CSS3~~ Tailwind v4.1
 -   Google Fonts (`Poppins`)
 -   Font Awesome icons
 
+## New Updates
+
+This section summarizes the main changes from the previous version:
+
+-   Styling migration to Tailwind (utility-first)
+-   Added responsiveness for mobile, tablet, and desktop
+-   Fixed navbar to remain visible while scrolling
+-   Hover animations for smoother interactions
+
 ## Deployed Page
 
--   GitHub Page: `https://revou-fsse-oct25.github.io/milestone-1-khankhanfauzan/`
+-   GitHub Page: [Open](https://revou-fsse-oct25.github.io/milestone-1-khankhanfauzan/)
 
 ## How to Deploy (GitHub Pages)
 
@@ -70,3 +82,25 @@ This website shows my learning progress and small projects as a RevoU student. I
 -   Open `index.html` directly in your browser, or run a small server:
 -   macOS/Linux: `python3 -m http.server 8000` then visit `http://localhost:8000/`
 -   Open `index.html` on code editor, and simply run with **Live Server**
+-   Opsional (jika menggunakan Tailwind CLI): jalankan proses build saat develop
+
+```bash
+npx @tailwindcss/cli -i ./input.css -o ./css/styles.css --watch
+```
+
+### See the difference form previous build
+
+-   `main` = latest version (Tailwind, responsive, fixed navbar, hover animation)
+-   `module-1` = previous version (Manual CSS)
+-   Open terminal in code editor, then run this command:
+
+```bash
+git checkout module-1
+```
+
+-   then follow the steps on [Access Locally](#access-locally-optional)
+-   Opsional: bandingkan perubahan file inti (HTML/CSS) dengan perintah diff:
+
+```bash
+git diff module-1..main -- index.html css/styles.css
+```
