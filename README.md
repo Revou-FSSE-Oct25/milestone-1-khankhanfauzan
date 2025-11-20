@@ -34,7 +34,7 @@ This website shows my learning progress and small projects as a RevoU student. I
 
 -   HTML5
 -   ~~CSS3~~ Tailwind v4.1
--   Google Fonts (`Poppins`)
+-   Google Fonts (`Plus Jakarta Sans`)
 -   ~~Font Awesome icons v4.7.0~~ Remix Icon v4.7.0
     _some icons is not available in Font Awesome Icons_
 
@@ -69,7 +69,7 @@ This section summarizes the main changes from the previous version:
         <button
             class="py-2 px-8 border-teal-500 text-teal-500 border-1 rounded  transition hover:border-teal-700 hover:text-teal-700 hover:cursor-pointer"
         >
-            HireMe
+            Hire Me
         </button>
         ```
 
