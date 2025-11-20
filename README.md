@@ -25,7 +25,8 @@ This website shows my learning progress and small projects as a RevoU student. I
 -   HTML5
 -   ~~CSS3~~ Tailwind v4.1
 -   Google Fonts (`Poppins`)
--   Font Awesome icons
+-   ~~Font Awesome icons v4.7.0~~ Remix Icon v4.7.0
+    _some icons is not available in Font Awesome Icons_
 
 ## New Updates
 
@@ -73,7 +74,8 @@ This section summarizes the main changes from the previous version:
 │       ├── patlog_pengawas.png
 │       ├── patlog_driver.png
 │       ├── mypertashop.png
-│       └── manager_mypertashop.png
+│       ├── manager_mypertashop.png
+│       └── mitra_pertashop.png
 └── index.html
 ```
 
