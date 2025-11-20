@@ -18,7 +18,7 @@ This website shows my learning progress and small projects as a RevoU student. I
 -   Download CV button
 -   Responsive design (mobile-first with Tailwind)
 -   Fixed top navbar (remains visible when scrolling)
--   Hover animations on buttons, links, and projects cards
+-   Hover transition on buttons, links, and projects cards
 
 ## Technologies
 
@@ -35,7 +35,7 @@ This section summarizes the main changes from the previous version:
 -   Styling migration to Tailwind (utility-first)
 -   Added responsiveness for mobile, tablet, and desktop
 -   Fixed navbar to remain visible while scrolling
--   Hover animations for smoother interactions
+-   Hover transition for smoother interactions
 
 ## Deployed Page
 
