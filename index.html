@@ -8,7 +8,8 @@
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Fauzan Khan - Personal Website</title>
     <!-- script for mobile menu button -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
@@ -83,7 +84,7 @@
                     <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugiat delectus voluptatibus
                         reprehenderit. Illo voluptas dolorum animi sunt quibusdam aspernatur?</p> -->
                     <br>
-                    <a class="" href="#contact"><button
+                    <a href="#contact"><button
                             class="py-2 px-8 border-teal-500 text-teal-500 border-1 rounded  transition hover:border-teal-700 hover:text-teal-700">Hire
                             Me</button></a>
                 </div>
@@ -158,13 +159,24 @@
                     <h3 class="py-2">Here are some of my projects.</h3>
                 </div>
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        <ul class="flex gap-4 mb-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.elefante.mds_partner&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="ri-google-play-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                            <li><a href="https://apps.apple.com/id/app/mds-quail/id6755180789" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="ri-app-store-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                        </ul>
                         <figure>
                             <img src="./images/projects/mds_quail.png"
                                 alt="Screenshot of MDS Quail mobile app dashboard">
-                            <figcaption class="font-semibold">MDS Quail</figcaption>
+                            <figcaption class="font-semibold mt-4">MDS Quail</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Mobile app dashboard for quail farm management and
                                 tracking.</p>
                             <ul class="flex gap-4">
@@ -173,13 +185,24 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        <ul class="flex gap-4 mb-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.elefante.mds_app&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="ri-google-play-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                            <li><a href="https://apps.apple.com/us/app/mds-cooperative/id6447287999" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="ri-app-store-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                        </ul>
                         <figure>
                             <img src="./images/projects/mds_coop.png"
                                 alt="Screenshot of MDS Cooperative mobile app dashboard">
-                            <figcaption class="font-semibold">MDS Cooperative</figcaption>
+                            <figcaption class="font-semibold mt-4">MDS Cooperative</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">MDS member app for savings, loans, PPOB, and
                                 shopping.</p>
                             <ul class="flex gap-4">
@@ -188,13 +211,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
                         <figure>
                             <img src="./images/projects/linxspace.png"
                                 alt="Screenshot of Linxspace mobile app interface">
-                            <figcaption class="font-semibold">Linxspace</figcaption>
+                            <figcaption class="font-semibold mt-4">Linxspace</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Device registration, QA, and firmware updates via
                                 Bluetooth.</p>
                             <ul class="flex gap-4">
@@ -203,12 +227,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
                         <figure>
                             <img src="./images/projects/linxcoop.png" alt="Screenshot of LinxCoop mobile app interface">
-                            <figcaption class="font-semibold">LinxCoop</figcaption>
+                            <figcaption class="font-semibold mt-4">LinxCoop</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Digital service platform for various cooperatives.
                             </p>
                             <ul class="flex gap-4">
@@ -217,12 +242,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
                         <figure>
                             <img src="./images/projects/fuelinx.png" alt="Screenshot of Fuelinx mobile app interface">
-                            <figcaption class="font-semibold">Fuelinx</figcaption>
+                            <figcaption class="font-semibold mt-4">Fuelinx</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Dispenser control, digital transactions, and
                                 receipt printing for gas station
                             <ul class="flex gap-4">
@@ -231,13 +257,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        <ul class="flex gap-4 mb-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.firda.fms_operator&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="ri-google-play-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                        </ul>
                         <figure>
                             <img src="./images/projects/patlog_operator.png"
                                 alt="Screenshot of Patlog Operator mobile app">
-                            <figcaption class="font-semibold">Patlog Operator</figcaption>
+                            <figcaption class="font-semibold mt-4">Patlog Operator</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Transaction, stock, and distribution monitoring for
                                 operators.</p>
                             <ul class="flex gap-4">
@@ -246,13 +279,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        <ul class="flex gap-4 mb-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.firda.fms_pengawas&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="ri-google-play-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                        </ul>
                         <figure>
                             <img src="./images/projects/patlog_pengawas.png"
                                 alt="Screenshot of Patlog Pengawas mobile app">
-                            <figcaption class="font-semibold">Patlog Pengawas</figcaption>
+                            <figcaption class="font-semibold mt-4">Patlog Pengawas</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Monitoring with transaction verification for
                                 supervisors.
                             </p>
@@ -262,12 +302,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        <ul class="flex gap-4 mb-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.firda.fms_driver.fms_driver&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="ri-google-play-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                        </ul>
+
                         <figure>
                             <img src="./images/projects/patlog_driver.png" alt="Screenshot of Patlog Driver mobile app">
-                            <figcaption class="font-semibold">Patlog Driver</figcaption>
+                            <figcaption class="font-semibold mt-4">Patlog Driver</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Monitoring and distribution verification for
                                 drivers.</p>
                             <ul class="flex gap-4">
@@ -276,12 +324,19 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        <ul class="flex gap-4 mb-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.elefante.my_pertashop&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="ri-google-play-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                        </ul>
                         <figure>
                             <img src="./images/projects/mypertashop.png" alt="Screenshot of MyPertashop mobile app">
-                            <figcaption class="font-semibold">MyPertashop</figcaption>
+                            <figcaption class="font-semibold mt-4">MyPertashop</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Monitoring and fuel ordering for Pertashop owners.
                             </p>
                             <ul class="flex gap-4">
@@ -290,14 +345,36 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2">
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
                         <figure>
                             <img src="./images/projects/manager_mypertashop.png"
                                 alt="Screenshot of Manager MyPertashop mobile app">
-                            <figcaption class="font-semibold">Manager MyPertashop</figcaption>
+                            <figcaption class="font-semibold mt-4">Manager MyPertashop</figcaption>
                         </figure>
-                        <div class="project-meta">
+                        <div>
                             <p class="py-4 text-neutral-400 text-sm">Pertashop device registration and updates.</p>
+                            <ul class="flex gap-4">
+                                <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        <ul class="flex gap-4 mb-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.elefante.mitra_pertashop&pcampaignid=web_share"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="ri-google-play-fill transition hover:text-teal-500 hover:cursor-pointer"></a>
+                            </li>
+                        </ul>
+                        <figure>
+                            <img src="./images/projects/mitra_pertashop.png"
+                                alt="Screenshot of Mitra Pertashop mobile app">
+                            <figcaption class="font-semibold mt-4">Mitra Pertashop</figcaption>
+                        </figure>
+                        <div class="mt-auto">
+                            <p class="py-4 text-neutral-400 text-sm">Appp for Pertashop Partners.</p>
                             <ul class="flex gap-4">
                                 <li class=" px-2 rounded border-neutral-700 border-1">Flutter</li>
                                 <li class=" px-2 rounded border-neutral-700 border-1">Dart</li>
@@ -318,21 +395,21 @@
                         <form action="#" method="get" class="contact-form">
                             <fieldset>
                                 <legend class="py-2">Send a Message</legend>
-                                <div class="form-control">
+                                <div>
                                     <label class="text-sm" for="name">Name</label>
                                     <input
                                         class="py-2 px-4 border-1 bg-neutral-900 border-neutral-700 rounded-md w-full mt-2 mb-4 text-white placeholder:text-gray-500 transition focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-teal-500"
                                         type="text" id="name" name="name" placeholder="Your name" required minlength="2"
                                         autocomplete="name">
                                 </div>
-                                <div class="form-control">
+                                <div>
                                     <label class="text-sm" for="email">Email</label>
                                     <input
                                         class="py-2 px-4 border-1 bg-neutral-900 border-neutral-700 rounded-md w-full mt-2 mb-4 text-white placeholder:text-gray-500 transition focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-teal-500"
                                         type="email" id="email" name="email" placeholder="your@email.com" required
                                         autocomplete="email">
                                 </div>
-                                <div class="form-control">
+                                <div>
                                     <label class="text-sm" for="message">Message</label>
                                     <textarea
                                         class="py-2 px-4 border-1 bg-neutral-900 border-neutral-700 rounded-md w-full mt-2 mb-4 text-white placeholder:text-gray-500 transition focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-teal-500"
@@ -348,27 +425,27 @@
                         <h3 class="font-semibold">Contact Info</h3>
                         <p class="py-2">If you have any questions or would like to work together, feel free to reach
                             out!</p>
-                        <ul class="contact-list mt-4">
+                        <ul class="mt-4">
                             <li class="flex gap-4 mb-2">
-                                <i class="border-1 border-teal-500 text-teal-500 p-2 rounded-full w-8 h-8 text-center fa fa-envelope"
+                                <i class="border-1 border-teal-500 text-teal-500 p-1 rounded-full w-8 h-8 text-center ri-mail-fill"
                                     aria-hidden="true"></i>
-                                <div class="contact-info-item">
+                                <div>
                                     <h6>Email</h6>
                                     <p>khankhanfauzan@gmail.com</p>
                                 </div>
                             </li>
                             <li class="flex gap-4 mb-2">
-                                <i class="border-1 border-teal-500 text-teal-500 p-2 rounded-full w-8 h-8 text-center fa fa-phone"
+                                <i class="border-1 border-teal-500 text-teal-500 p-1 rounded-full w-8 h-8 text-center ri-phone-fill"
                                     aria-hidden="true"></i>
-                                <div class="contact-info-item">
+                                <div>
                                     <h6>Phone</h6>
                                     <p>+62 878 8968 8787</p>
                                 </div>
                             </li>
                             <li class="flex gap-4 mb-2">
-                                <i class="border-1 border-teal-500 text-teal-500 p-2 rounded-full w-8 h-8 text-center fa fa-map-marker"
+                                <i class="border-1 border-teal-500 text-teal-500 p-1 rounded-full w-8 h-8 text-center ri-map-pin-2-fill"
                                     aria-hidden="true"></i>
-                                <div class="contact-info-item">
+                                <div>
                                     <h6>Address</h6>
                                     <p>Jakarta, Indonesia</p>
                                 </div>
@@ -379,17 +456,17 @@
                             <div class="mt-2">
                                 <ul class="flex gap-4">
                                     <li>
-                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center fa fa-linkedin"
+                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center ri-linkedin-box-fill"
                                             aria-label="LinkedIn" href="https://www.linkedin.com/in/fauzanakbarkhan/"
                                             target="_blank" rel="noopener noreferrer"></a>
                                     </li>
                                     <li>
-                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center fa fa-github"
+                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center ri-github-fill"
                                             aria-label="GitHub" href="https://github.com/khankhanfauzan/"
                                             target="_blank" rel="noopener noreferrer"></a>
                                     </li>
                                     <li>
-                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center fa fa-instagram"
+                                        <a class="mr-4 border-1 border-teal-500 text-teal-500 hover:border-teal-700 hover:text-teal-700 p-2 rounded-full w-8 h-8 text-center ri-instagram-line"
                                             aria-label="Instagram" href="https://www.instagram.com/fauzanx34/"
                                             target="_blank" rel="noopener noreferrer"></a>
                                     </li>
