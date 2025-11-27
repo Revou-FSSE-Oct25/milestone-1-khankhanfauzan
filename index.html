@@ -68,7 +68,6 @@
 
             <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
                 <div class="space-y-1 px-2 pt-2 pb-3">
-                    <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                     <a href="#intro" aria-current="page"
                         class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">HOME</a>
                     <a href="#about"
@@ -83,7 +82,7 @@
     <main class="pt-16">
         <!-- Intro -->
         <section id="intro"
-            class="relative w-full text-white bg-[url(./images/backgrounds/bg_image.jpeg)] bg-no-repeat bg-cover bg-center sm:bg-center md:bg-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh]">
+            class="relative w-full text-white bg-[url(./images/backgrounds/bg_image.webp)] bg-no-repeat bg-cover bg-center sm:bg-center md:bg-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh]">
             <div class="absolute inset-0 bg-black/40"></div>
             <div
                 class="mx-auto max-w-screen-xl px-6 sm:px-8 lg:px-16 py-16 sm:py-20 lg:py-24 sm:flex justify-center sm:justify-end items-center relative z-10">
@@ -98,7 +97,7 @@
                 </div>
                 <div class="rounded-lg overflow-hidden">
                     <img class="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto rounded-lg"
-                        src="./images/profiles/fauzan_photo_2.JPG" alt="profile">
+                        src="./images/profiles/fauzan_photo_2.webp" alt="profile" loading="lazy">
                 </div>
             </div>
         </section>
@@ -106,8 +105,8 @@
         <section id="about" class="w-full bg-white text-black">
             <div class="mx-auto  py-32 px-16 sm:flex justify-center sm:justify-end max-w-7xl items-center">
                 <div class="rounded-lg overflow-hidden">
-                    <img class="w-full max-w-md sm:max-w-6xl h-auto rounded-lg" src="./images/profiles/fauzan_photo.jpg"
-                        alt="profile 2">
+                    <img class="w-full max-w-md sm:max-w-6xl h-auto rounded-lg"
+                        src="./images/profiles/fauzan_photo.webp" alt="profile 2" loading="lazy">
                 </div>
                 <div class="pt-12 sm:pl-12">
                     <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold">About <span
@@ -174,7 +173,7 @@
                 </div>
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <ul class="flex gap-4 mb-4">
                             <li><a href="https://play.google.com/store/apps/details?id=com.elefante.mds_partner&pcampaignid=web_share"
                                     target="_blank" rel="noopener noreferrer"
@@ -187,7 +186,7 @@
                         </ul>
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/mds_quail.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/mds_quail.webp"
                                     alt="Screenshot of MDS Quail mobile app dashboard" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -198,13 +197,13 @@
                                 management and
                                 tracking.</p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <ul class="flex gap-4 mb-4">
                             <li><a href="https://play.google.com/store/apps/details?id=com.elefante.mds_app&pcampaignid=web_share"
                                     target="_blank" rel="noopener noreferrer"
@@ -217,7 +216,7 @@
                         </ul>
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/mds_coop.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/mds_coop.webp"
                                     alt="Screenshot of MDS Cooperative mobile app dashboard" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -228,16 +227,16 @@
                                 PPOB, and
                                 shopping.</p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/linxspace.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/linxspace.webp"
                                     alt="Screenshot of Linxspace mobile app interface" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -248,16 +247,16 @@
                                 updates via
                                 Bluetooth.</p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/linxcoop.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/linxcoop.webp"
                                     alt="Screenshot of LinxCoop mobile app interface" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -268,16 +267,16 @@
                                 cooperatives.
                             </p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/fuelinx.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/fuelinx.webp"
                                     alt="Screenshot of Fuelinx mobile app interface" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -288,13 +287,13 @@
                                 transactions, and
                                 receipt printing for gas station
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <ul class="flex gap-4 mb-4">
                             <li><a href="https://play.google.com/store/apps/details?id=com.firda.fms_operator&pcampaignid=web_share"
                                     target="_blank" rel="noopener noreferrer"
@@ -303,7 +302,7 @@
                         </ul>
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/patlog_operator.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/patlog_operator.webp"
                                     alt="Screenshot of Patlog Operator mobile app" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -314,13 +313,13 @@
                                 monitoring for
                                 operators.</p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <ul class="flex gap-4 mb-4">
                             <li><a href="https://play.google.com/store/apps/details?id=com.firda.fms_pengawas&pcampaignid=web_share"
                                     target="_blank" rel="noopener noreferrer"
@@ -329,7 +328,7 @@
                         </ul>
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/patlog_pengawas.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/patlog_pengawas.webp"
                                     alt="Screenshot of Patlog Pengawas mobile app" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -341,13 +340,13 @@
                                 supervisors.
                             </p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <ul class="flex gap-4 mb-4">
                             <li><a href="https://play.google.com/store/apps/details?id=com.firda.fms_driver.fms_driver&pcampaignid=web_share"
                                     target="_blank" rel="noopener noreferrer"
@@ -357,7 +356,7 @@
 
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/patlog_driver.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/patlog_driver.webp"
                                     alt="Screenshot of Patlog Driver mobile app" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -368,13 +367,13 @@
                                 verification for
                                 drivers.</p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <ul class="flex gap-4 mb-4">
                             <li><a href="https://play.google.com/store/apps/details?id=com.elefante.my_pertashop&pcampaignid=web_share"
                                     target="_blank" rel="noopener noreferrer"
@@ -383,7 +382,7 @@
                         </ul>
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/mypertashop.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/mypertashop.webp"
                                     alt="Screenshot of MyPertashop mobile app" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -394,17 +393,17 @@
                                 Pertashop owners.
                             </p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
                                 <img class="w-full h-full object-contain"
-                                    src="./images/projects/manager_mypertashop.png"
+                                    src="./images/projects/manager_mypertashop.webp"
                                     alt="Screenshot of Manager MyPertashop mobile app" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -414,13 +413,13 @@
                             <p class="py-4 text-neutral-400 text-sm sm:text-base">Pertashop device registration and
                                 updates.</p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
                     <div
-                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end">
+                        class="bg-neutral-900 rounded-md p-4 shadow-lg transition hover:-translate-y-2 flex flex-col h-full justify-end hover:bg-neutral-700 transition grayscale hover:grayscale-0 rounded">
                         <ul class="flex gap-4 mb-4">
                             <li><a href="https://play.google.com/store/apps/details?id=com.elefante.mitra_pertashop&pcampaignid=web_share"
                                     target="_blank" rel="noopener noreferrer"
@@ -429,7 +428,7 @@
                         </ul>
                         <figure>
                             <div class="aspect-[4/3] w-full flex items-center justify-center">
-                                <img class="w-full h-full object-contain" src="./images/projects/mitra_pertashop.png"
+                                <img class="w-full h-full object-contain" src="./images/projects/mitra_pertashop.webp"
                                     alt="Screenshot of Mitra Pertashop mobile app" loading="lazy"
                                     sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw">
                             </div>
@@ -438,8 +437,8 @@
                         <div class="mt-auto">
                             <p class="py-4 text-neutral-400 text-sm sm:text-base">Appp for Pertashop Partners.</p>
                             <ul class="flex gap-4">
-                                <li class=" px-2 rounded border-neutral-700 border">Flutter</li>
-                                <li class=" px-2 rounded border-neutral-700 border">Dart</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Flutter</li>
+                                <li class=" px-2 rounded border-neutral-600 border">Dart</li>
                             </ul>
                         </div>
                     </div>
