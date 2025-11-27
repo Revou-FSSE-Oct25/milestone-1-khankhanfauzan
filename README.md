@@ -9,10 +9,10 @@ This website shows my learning progress and small projects as a RevoU student. I
 ## UI Overview
 
 -   Screenshots: overview of each section on the page
-    -   Home: ![Home Section](./images/screenshots/home_section.png)
-    -   About & Skills: ![About & Skills](./images/screenshots/about_and_skills_section.png)
-    -   Projects: ![Projects Section](./images/screenshots/projects_section.png)
-    -   Contact: ![Contact Section](./images/screenshots/contact_section.png)
+    -   Home: ![Home Section](./images/screenshots/home_section.webp)
+    -   About & Skills: ![About & Skills](./images/screenshots/about_and_skills_section.webp)
+    -   Projects: ![Projects Section](./images/screenshots/projects_section.webp)
+    -   Contact: ![Contact Section](./images/screenshots/contact_section.webp)
 
 ## Features
 
@@ -149,20 +149,20 @@ This section summarizes the main changes from the previous version:
 │   └── styles.css
 ├── images/
 │   ├── profiles/
-│   │   ├── fauzan_photo.JPG
-│   │   └── fauzan_photo_2.JPG
+│   │   ├── fauzan_photo.webp
+│   │   └── fauzan_photo_2.webp
 │   ├── projects/
-│   │   ├── mds_quail.png
-│   │   ├── mds_coop.png
-│   │   ├── linxspace.png
-│   │   ├── linxcoop.png
-│   │   ├── fuelinx.png
-│   │   ├── patlog_operator.png
-│   │   ├── patlog_pengawas.png
-│   │   ├── patlog_driver.png
-│   │   ├── mypertashop.png
-│   │   ├── manager_mypertashop.png
-│   │   └── mitra_pertashop.png
+│   │   ├── mds_quail.webp
+│   │   ├── mds_coop.webp
+│   │   ├── linxspace.webp
+│   │   ├── linxcoop.webp
+│   │   ├── fuelinx.webp
+│   │   ├── patlog_operator.webp
+│   │   ├── patlog_pengawas.webp
+│   │   ├── patlog_driver.webp
+│   │   ├── mypertashop.webp
+│   │   ├── manager_mypertashop.webp
+│   │   └── mitra_pertashop.webp
 │   ├── gifs/
 │   │   ├── cards_transition.gif
 │   │   ├── primary_button_transition.gif
@@ -171,10 +171,10 @@ This section summarizes the main changes from the previous version:
 │   │   ├── secondary_icon_transition.gif
 │   │   └── website_overview.gif
 │   └── screenshots/
-│       ├── home_section.png
-│       ├── about_and_skills_section.png
-│       ├── projects_section.png
-│       └── contact_section.png
+│       ├── home_section.webp
+│       ├── about_and_skills_section.webp
+│       ├── projects_section.webp
+│       └── contact_section.webp
 └── index.html
 ```
 
